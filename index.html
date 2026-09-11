@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vaishnavi Patel — Generative AI & Agentic AI Solution Architect</title>
+<meta name="description" content="Portfolio of Vaishnavi Patel, Generative AI & Agentic AI Solution Architect. Production RAG platforms, agentic workflows, LLMOps, and enterprise AI architecture.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo mono">&lt;vaishnavi<span class="grad">.patel</span>/&gt;</a>
+    <div class="nav-links" id="navLinks">
+      <a href="#blueprint">Blueprint</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#impact">Impact</a>
+      <a href="#education">Education</a>
+      <a href="#contact" class="nav-cta">Hire Me</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <canvas id="aurora" aria-hidden="true"></canvas>
+  <div class="hero-grid-overlay" aria-hidden="true"></div>
+  <div class="hero-content">
+    <p class="hero-kicker mono reveal"><span class="pulse-dot"></span> AVAILABLE FOR ARCHITECTURE LEADERSHIP ROLES</p>
+    <h1 class="hero-name reveal">VAISHNAVI <span class="grad">PATEL</span></h1>
+    <h2 class="hero-title reveal">Generative AI &amp; Agentic AI <span class="grad">Solution Architect</span></h2>
+    <p class="hero-typing mono reveal">I build <span id="typed"></span><span class="caret">▍</span></p>
+    <p class="hero-loc mono reveal">📍 North Haven, CT · U.S. Permanent Resident · No sponsorship needed</p>
+    <div class="hero-ctas reveal">
+      <a href="#blueprint" class="btn btn-primary">View Architecture</a>
+      <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+    </div>
+    <div class="hero-stats reveal">
+      <div class="stat-chip"><span class="stat-num" data-count="10" data-suffix="+">0</span><span class="stat-label">yrs tech</span></div>
+      <div class="stat-chip"><span class="stat-num" data-count="8" data-suffix="+">0</span><span class="stat-label">yrs AI/ML</span></div>
+      <div class="stat-chip"><span class="stat-num" data-count="99.9" data-decimals="1" data-suffix="%">0</span><span class="stat-label">availability</span></div>
+      <div class="stat-chip"><span class="stat-num" data-count="6" data-suffix="">0</span><span class="stat-label">engineers led</span></div>
+    </div>
+  </div>
+  <a href="#blueprint" class="scroll-hint mono" aria-hidden="true">scroll ↓</a>
+</header>
+
+<!-- ============ SOLUTION BLUEPRINT ============ -->
+<section class="section" id="blueprint">
+  <div class="container">
+    <p class="section-kicker mono reveal">// 01 · SOLUTION BLUEPRINT</p>
+    <h2 class="section-title reveal">Production RAG + Agentic AI Platform</h2>
+    <p class="section-sub reveal">Reference architecture from my enterprise incident-intelligence platform: a retrieval-augmented agent mesh with human-in-the-loop governance, eval-driven LLMOps, and secure enterprise integration.</p>
+
+    <div class="glass blueprint-card reveal">
+      <div class="blueprint-head mono">
+        <span class="traffic"><i></i><i></i><i></i></span>
+        <span class="bp-filename">reference-architecture.svg — genai-incident-intelligence</span>
+        <span class="bp-badge grad-bg">PROD</span>
+      </div>
+      <div class="blueprint-svg-wrap">
+      <svg viewBox="0 0 1160 640" class="bp-svg" role="img" aria-label="Layered architecture diagram of a RAG and agentic AI platform">
+        <defs>
+          <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#8b5cf6"/><stop offset=".5" stop-color="#22d3ee"/><stop offset="1" stop-color="#34d399"/>
+          </linearGradient>
+          <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#22d3ee"/>
+          </marker>
+        </defs>
+
+        <!-- layer labels -->
+        <text x="30" y="40" class="bp-layer">L1 · CLIENT / UX</text>
+        <text x="30" y="170" class="bp-layer">L2 · API GATEWAY</text>
+        <text x="30" y="300" class="bp-layer">L3 · AGENT ORCHESTRATOR</text>
+        <text x="30" y="430" class="bp-layer">L4 · RETRIEVAL ENGINE</text>
+        <text x="30" y="540" class="bp-layer">L5 · MODELS &amp; ENTERPRISE SYSTEMS</text>
+
+        <!-- L1 -->
+        <g class="bp-node"><rect x="180" y="18" width="170" height="46" rx="10"/><text x="265" y="37">Chat / Copilot UI</text><text x="265" y="53" class="bp-sub">SSE streaming</text></g>
+        <g class="bp-node"><rect x="370" y="18" width="170" height="46" rx="10"/><text x="455" y="37">Ops Dashboards</text><text x="455" y="53" class="bp-sub">observability</text></g>
+        <g class="bp-node"><rect x="560" y="18" width="170" height="46" rx="10"/><text x="645" y="37">Ticketing App</text><text x="645" y="53" class="bp-sub">ITSM embed</text></g>
+        <g class="bp-node"><rect x="750" y="18" width="170" height="46" rx="10"/><text x="835" y="37">SSO / Identity</text><text x="835" y="53" class="bp-sub">OAuth2 · OIDC</text></g>
+
+        <!-- L2 -->
+        <g class="bp-node accent"><rect x="180" y="148" width="740" height="46" rx="10"/><text x="550" y="167">FastAPI Gateway — auth · RBAC · rate-limit · audit logging</text><text x="550" y="183" class="bp-sub">REST + WebSocket · OpenAPI · mTLS</text></g>
+
+        <!-- L3 -->
+        <g class="bp-node"><rect x="180" y="262" width="140" height="58" rx="10"/><text x="250" y="284">Planner</text><text x="250" y="301" class="bp-sub">task decomposition</text></g>
+        <g class="bp-node"><rect x="335" y="262" width="140" height="58" rx="10"/><text x="405" y="284">Router</text><text x="405" y="301" class="bp-sub">intent routing</text></g>
+        <g class="bp-node"><rect x="490" y="262" width="140" height="58" rx="10"/><text x="560" y="284">Tool Caller</text><text x="560" y="301" class="bp-sub">MCP tools</text></g>
+        <g class="bp-node"><rect x="645" y="262" width="140" height="58" rx="10"/><text x="715" y="284">Memory</text><text x="715" y="301" class="bp-sub">short · long-term</text></g>
+        <g class="bp-node warn"><rect x="800" y="262" width="140" height="58" rx="10"/><text x="870" y="284">HITL Gate</text><text x="870" y="301" class="bp-sub">human approval</text></g>
+        <g class="bp-node"><rect x="955" y="262" width="150" height="58" rx="10"/><text x="1030" y="284">Guardrails</text><text x="1030" y="301" class="bp-sub">policy filters</text></g>
+
+        <!-- L4 -->
+        <g class="bp-node small"><rect x="180" y="392" width="105" height="58" rx="10"/><text x="232" y="414">Ingest</text><text x="232" y="431" class="bp-sub">~12 sources</text></g>
+        <g class="bp-node small"><rect x="298" y="392" width="105" height="58" rx="10"/><text x="350" y="414">Chunk</text><text x="350" y="431" class="bp-sub">semantic</text></g>
+        <g class="bp-node small"><rect x="416" y="392" width="105" height="58" rx="10"/><text x="468" y="414">Embed</text><text x="468" y="431" class="bp-sub">dense vectors</text></g>
+        <g class="bp-node small"><rect x="534" y="392" width="105" height="58" rx="10"/><text x="586" y="414">Vector DB</text><text x="586" y="431" class="bp-sub">pgvector</text></g>
+        <g class="bp-node small"><rect x="652" y="392" width="105" height="58" rx="10"/><text x="704" y="414">Hybrid Search</text><text x="704" y="431" class="bp-sub">dense+BM25</text></g>
+        <g class="bp-node small"><rect x="770" y="392" width="105" height="58" rx="10"/><text x="822" y="414">Rerank</text><text x="822" y="431" class="bp-sub">cross-encoder</text></g>
+        <g class="bp-node small accent"><rect x="888" y="392" width="217" height="58" rx="10"/><text x="996" y="414">Context Assembly</text><text x="996" y="431" class="bp-sub">grounded prompts</text></g>
+
+        <!-- L5 -->
+        <g class="bp-node accent"><rect x="180" y="502" width="240" height="58" rx="10"/><text x="300" y="524">Claude / Azure OpenAI</text><text x="300" y="541" class="bp-sub">reasoning models</text></g>
+        <g class="bp-node"><rect x="435" y="502" width="170" height="58" rx="10"/><text x="520" y="524">Insurance Core</text><text x="520" y="541" class="bp-sub">policy · claims</text></g>
+        <g class="bp-node"><rect x="620" y="502" width="170" height="58" rx="10"/><text x="705" y="524">ITSM / Tickets</text><text x="705" y="541" class="bp-sub">ServiceNow-like</text></g>
+        <g class="bp-node"><rect x="805" y="502" width="170" height="58" rx="10"/><text x="890" y="524">Knowledge Bases</text><text x="890" y="541" class="bp-sub">docs · wikis</text></g>
+        <g class="bp-node"><rect x="990" y="502" width="115" height="58" rx="10"/><text x="1047" y="524">Telemetry</text><text x="1047" y="541" class="bp-sub">eval · traces</text></g>
+
+        <!-- edges -->
+        <g class="bp-edges" stroke="url(#edge)" fill="none" stroke-width="1.6">
+          <line x1="265" y1="64" x2="265" y2="148" marker-end="url(#arrow)"/>
+          <line x1="455" y1="64" x2="455" y2="148" marker-end="url(#arrow)"/>
+          <line x1="645" y1="64" x2="645" y2="148" marker-end="url(#arrow)"/>
+          <line x1="835" y1="64" x2="835" y2="148" marker-end="url(#arrow)"/>
+          <line x1="405" y1="194" x2="405" y2="262" marker-end="url(#arrow)"/>
+          <line x1="695" y1="194" x2="695" y2="262" marker-end="url(#arrow)"/>
+          <line x1="560" y1="320" x2="560" y2="392" marker-end="url(#arrow)"/>
+          <line x1="996" y1="450" x2="996" y2="502" marker-end="url(#arrow)"/>
+          <line x1="300" y1="450" x2="300" y2="502" marker-end="url(#arrow)"/>
+          <line x1="704" y1="450" x2="704" y2="502" marker-end="url(#arrow)"/>
+        </g>
+      </svg>
+      </div>
+      <p class="bp-note mono">Telemetry loop (AgentOps): every agent trace feeds eval datasets — groundedness, hallucination-risk, and latency regression tests run in CI before promotion.</p>
+    </div>
+
+    <!-- Terminal code block -->
+    <div class="glass terminal reveal">
+      <div class="term-head">
+        <span class="traffic"><i></i><i></i><i></i></span>
+        <span class="mono term-title">agent_gateway.py — FastAPI agent endpoint + MCP tool</span>
+        <button class="copy-btn mono" id="copyBtn">copy</button>
+      </div>
+      <pre class="code mono" id="codeBlock"><code><span class="c-kw">from</span> <span class="c-mod">fastapi</span> <span class="c-kw">import</span> <span class="c-mod">FastAPI</span>, <span class="c-mod">Depends</span>
+<span class="c-kw">from</span> <span class="c-mod">pydantic</span> <span class="c-kw">import</span> <span class="c-mod">BaseModel</span>
+
+<span class="c-com"># --- MCP tool: grounded retrieval the agent can call ---</span>
+<span class="c-dec">@mcp.tool</span>()
+<span class="c-kw">async def</span> <span class="c-fn">retrieve_incident_context</span>(query: <span class="c-mod">str</span>, top_k: <span class="c-mod">int</span> = <span class="c-num">8</span>) -> <span class="c-mod">list</span>[<span class="c-mod">Chunk</span>]:
+    <span class="c-str">"""Hybrid dense+BM25 search, reranked, with citations."""</span>
+    hits = <span class="c-kw">await</span> vector_db.hybrid_search(query, k=top_k * <span class="c-num">3</span>)
+    ranked = reranker.rerank(query, hits)[:top_k]
+    <span class="c-kw">return</span> [assemble_with_citations(c) <span class="c-kw">for</span> c <span class="c-kw">in</span> ranked]
+
+<span class="c-kw">class</span> <span class="c-cls">TriageRequest</span>(<span class="c-mod">BaseModel</span>):
+    incident_id: <span class="c-mod">str</span>
+    priority: <span class="c-mod">str</span> = <span class="c-str">"P2"</span>
+
+<span class="c-dec">@app.post</span>(<span class="c-str">"/v1/agents/triage"</span>)
+<span class="c-kw">async def</span> <span class="c-fn">triage</span>(req: <span class="c-cls">TriageRequest</span>, user=Depends(<span class="c-fn">require_oauth2</span>)):
+    plan = <span class="c-kw">await</span> orchestrator.plan(req, tools=[retrieve_incident_context])
+    <span class="c-kw">if</span> plan.risk == <span class="c-str">"high"</span>:
+        <span class="c-kw">await</span> hitl_gate.request_approval(plan, approver=user.team)  <span class="c-com"># human-in-the-loop</span>
+    result = <span class="c-kw">await</span> orchestrator.execute(plan, model=<span class="c-str">"claude"</span>)
+    <span class="c-kw">await</span> telemetry.log_trace(result, eval_suite=<span class="c-str">"groundedness-v3"</span>)
+    <span class="c-kw">return</span> {<span class="c-str">"status"</span>: <span class="c-str">"ok"</span>, <span class="c-str">"citations"</span>: result.citations}</code></pre>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section" id="experience">
+  <div class="container">
+    <p class="section-kicker mono reveal">// 02 · EXPERIENCE</p>
+    <h2 class="section-title reveal">Where I've shipped</h2>
+    <div class="timeline">
+
+      <article class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card glass">
+          <p class="mono tl-date">Jan 2026 — Present</p>
+          <h3>Generative AI Solution Architect</h3>
+          <p class="tl-org">PwC <span class="mono tl-via">via Orion Innovation</span></p>
+          <ul>
+            <li>Architected an <strong>enterprise GenAI incident-intelligence platform</strong>: <strong>+35% knowledge retrieval</strong>, <strong>−25% time-to-resolution</strong>.</li>
+            <li>Designed <strong>RAG + agentic workflows</strong> across ~12 knowledge sources and 4 enterprise systems.</li>
+            <li>Built secure <strong>Python/FastAPI microservices</strong> with SSO/OAuth2 and RBAC.</li>
+            <li>Shipped <strong>Claude-based components</strong> with AgentOps telemetry — eval datasets, groundedness, hallucination-risk testing.</li>
+            <li>Docker, Terraform, CI/CD: <strong>−60% provisioning time</strong>, <strong>−30% audit findings</strong>, <strong>99.9% availability</strong>.</li>
+            <li>Lead a team of <strong>~6 engineers</strong>.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card glass">
+          <p class="mono tl-date">Apr 2025 — Nov 2025</p>
+          <h3>Generative AI Solution Architect</h3>
+          <p class="tl-org">Chaffin Luhana LLP</p>
+          <ul>
+            <li>Designed <strong>legal RAG &amp; agent solutions</strong> for case-work knowledge and document intelligence.</li>
+            <li>Drove <strong>+45% operational efficiency</strong> and <strong>+50% team productivity</strong> through reusable AI components.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card glass">
+          <p class="mono tl-date">Aug 2024 — Mar 2025</p>
+          <h3>AI/ML Solution Architect</h3>
+          <p class="tl-org">Sacred Heart University</p>
+          <ul>
+            <li>Architected <strong>NLP &amp; recommendation systems</strong> for university data platforms.</li>
+            <li>Achieved <strong>+35% model accuracy</strong> through improved feature pipelines and evaluation.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card glass">
+          <p class="mono tl-date">Dec 2017 — Jan 2024 <span class="mono tl-sub">· intern 2015–2017</span></p>
+          <h3>AI Solution Architect</h3>
+          <p class="tl-org">Manikanta Solutions</p>
+          <ul>
+            <li>Shipped <strong>fraud detection, forecasting, and predictive maintenance</strong> ML systems.</li>
+            <li>Built <strong>Python/Flask APIs</strong> and data pipelines on <strong>AWS/Azure</strong> for production workloads.</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section" id="skills">
+  <div class="container">
+    <p class="section-kicker mono reveal">// 03 · CAPABILITIES</p>
+    <h2 class="section-title reveal">Skills, architected</h2>
+    <div class="tabs reveal" id="skillTabs" role="tablist"></div>
+    <div class="glass skills-panel reveal" id="skillsPanel"></div>
+  </div>
+</section>
+
+<!-- ============ IMPACT ============ -->
+<section class="section impact" id="impact">
+  <div class="container">
+    <p class="section-kicker mono reveal">// 04 · IMPACT</p>
+    <h2 class="section-title reveal">Measured outcomes</h2>
+    <div class="metrics-grid">
+      <div class="metric glass reveal"><span class="metric-num grad" data-count="35" data-suffix="%">0</span><span class="metric-label">better knowledge retrieval</span></div>
+      <div class="metric glass reveal"><span class="metric-num grad" data-count="25" data-suffix="%">0</span><span class="metric-label">faster incident resolution</span></div>
+      <div class="metric glass reveal"><span class="metric-num grad" data-count="60" data-suffix="%">0</span><span class="metric-label">faster provisioning</span></div>
+      <div class="metric glass reveal"><span class="metric-num grad" data-count="30" data-suffix="%">0</span><span class="metric-label">fewer audit findings</span></div>
+      <div class="metric glass reveal"><span class="metric-num grad" data-count="45" data-suffix="%">0</span><span class="metric-label">operational efficiency gain</span></div>
+      <div class="metric glass reveal"><span class="metric-num grad" data-count="99.9" data-decimals="1" data-suffix="%">0</span><span class="metric-label">platform availability</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TECH MARQUEE ============ -->
+<div class="marquee-band" aria-hidden="true">
+  <div class="marquee mono">
+    <span>Anthropic Claude ✦ Azure OpenAI ✦ Python ✦ FastAPI ✦ RAG ✦ MCP ✦ Vector DBs ✦ Docker ✦ Terraform ✦ GitHub Actions ✦ Azure DevOps ✦ Azure AI Search ✦ REST ✦ OAuth2/OIDC ✦&nbsp;</span>
+    <span>Anthropic Claude ✦ Azure OpenAI ✦ Python ✦ FastAPI ✦ RAG ✦ MCP ✦ Vector DBs ✦ Docker ✦ Terraform ✦ GitHub Actions ✦ Azure DevOps ✦ Azure AI Search ✦ REST ✦ OAuth2/OIDC ✦&nbsp;</span>
+  </div>
+</div>
+
+<!-- ============ EDUCATION ============ -->
+<section class="section" id="education">
+  <div class="container">
+    <p class="section-kicker mono reveal">// 05 · EDUCATION &amp; STATUS</p>
+    <h2 class="section-title reveal">Foundations</h2>
+    <div class="edu-grid">
+      <div class="glass edu-card reveal">
+        <p class="mono edu-degree">M.S.</p>
+        <h3>Computer Science</h3>
+        <p class="edu-school">Sacred Heart University</p>
+      </div>
+      <div class="glass edu-card reveal">
+        <p class="mono edu-degree">MBA</p>
+        <h3>Information Technology</h3>
+        <p class="edu-school">NMIMS</p>
+      </div>
+      <div class="glass edu-card reveal auth">
+        <p class="mono edu-degree">🇺🇸</p>
+        <h3>U.S. Permanent Resident</h3>
+        <p class="edu-school">Unrestricted work authorization — no sponsorship needed</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact">
+  <div class="container">
+    <p class="section-kicker mono reveal">// 06 · CONTACT</p>
+    <h2 class="section-title reveal">Let's build something <span class="grad">intelligent</span></h2>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <a class="glass contact-row" href="mailto:vaishnavikrishnakantt@gmail.com">
+          <span class="c-icon">✉</span>
+          <span><span class="mono c-label">EMAIL</span><span class="c-val">vaishnavikrishnakantt@gmail.com</span></span>
+        </a>
+        <a class="glass contact-row" href="tel:+12032151561">
+          <span class="c-icon">☎</span>
+          <span><span class="mono c-label">PHONE</span><span class="c-val">+1 203-215-1561</span></span>
+        </a>
+        <a class="glass contact-row" href="https://www.linkedin.com/in/vaishnavi-patel-a7785b325" target="_blank" rel="noopener">
+          <span class="c-icon">in</span>
+          <span><span class="mono c-label">LINKEDIN</span><span class="c-val">linkedin.com/in/vaishnavi-patel-a7785b325</span></span>
+        </a>
+        <div class="glass contact-row static">
+          <span class="c-icon">📍</span>
+          <span><span class="mono c-label">BASED IN</span><span class="c-val">North Haven, CT — open to remote</span></span>
+        </div>
+      </div>
+      <form class="glass contact-form reveal" id="contactForm">
+        <label class="mono">Your name<input type="text" id="cfName" required placeholder="Ada Lovelace"></label>
+        <label class="mono">Your email<input type="email" id="cfEmail" required placeholder="you@company.com"></label>
+        <label class="mono">Message<textarea id="cfMsg" rows="5" required placeholder="Tell me about the role or project…"></textarea></label>
+        <button type="submit" class="btn btn-primary">Send via Email →</button>
+        <p class="mono form-note">Opens your mail client — no backend, no tracking.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer mono">
+  <div class="container">
+    <span>© 2026 Vaishnavi Patel · Built with intent, shipped with telemetry</span>
+    <a href="#top">back to top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
