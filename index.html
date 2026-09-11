@@ -8,6 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vaishnavi Patel — Generative AI & Agentic AI Solution Architect">
+<meta property="og:description" content="Production RAG platforms, agentic workflows, LLMOps, and enterprise AI architecture. 10+ years, 99.9% availability, measured outcomes.">
+<meta property="og:url" content="https://ttripathi167.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#05070d">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%238b5cf6'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%2305070d'/%3E%3Ctext x='32' y='45' font-family='monospace' font-size='36' font-weight='bold' fill='url(%23g)' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,10 +27,10 @@
     <a href="#top" class="nav-logo mono">&lt;vaishnavi<span class="grad">.patel</span>/&gt;</a>
     <div class="nav-links" id="navLinks">
       <a href="#blueprint">Blueprint</a>
+      <a href="#work">Work</a>
+      <a href="#blueprints">Blueprints</a>
       <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#impact">Impact</a>
-      <a href="#education">Education</a>
+      <a href="#clients">Clients</a>
       <a href="#contact" class="nav-cta">Hire Me</a>
     </div>
     <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -170,10 +177,215 @@
   </div>
 </section>
 
+<!-- ============ SELECTED WORK ============ -->
+<section class="section" id="work">
+  <div class="container">
+    <p class="section-kicker mono reveal">// 02 · SELECTED WORK</p>
+    <h2 class="section-title reveal">Case studies from production</h2>
+    <p class="section-sub reveal">Real engagements, real architectures, measured outcomes. Click any card for the full story — problem, solution, request flow, and results.</p>
+    <div class="cases">
+      <article class="glass case reveal">
+        <button class="case-head" aria-expanded="false">
+          <span class="case-top"><span class="case-domain mono">INSURANCE OPERATIONS</span><span class="case-org mono">PwC · via Orion Innovation · 2026–Present</span></span>
+          <span class="case-title">Enterprise GenAI Incident-Intelligence Platform</span>
+          <span class="case-tease">A production RAG + agentic platform turning scattered enterprise knowledge into incident answers — with citations, guardrails, and human-in-the-loop governance.</span>
+          <span class="case-metrics"><span class="cm">+35% retrieval</span><span class="cm">−25% resolution time</span><span class="cm">99.9% availability</span></span>
+          <span class="case-toggle mono">+ expand</span>
+        </button>
+        <div class="case-body">
+          <div class="case-inner">
+            <div class="case-cols">
+              <div><h4 class="mono">PROBLEM</h4><p>Incident responders worked across ~12 disconnected knowledge sources and 4 enterprise systems. Tribal knowledge, slow lookup, and inconsistent answers drove long time-to-resolution and real audit exposure.</p></div>
+              <div><h4 class="mono">SOLUTION ARCHITECTURE</h4><ul><li>RAG pipeline: ingestion → semantic chunking → embeddings → metadata → vector store</li><li>Hybrid dense + BM25 retrieval with cross-encoder reranking and grounded citation assembly</li><li>Agentic workflows: planner, router, MCP tool calling, short/long-term memory, human-escalation gates</li><li>Secure Python/FastAPI microservices — SSO/OAuth2, RBAC, least-privilege tool access</li><li>Anthropic Claude components with reusable prompt/tool adapters and token/latency/cost budgets</li><li>AgentOps telemetry: eval datasets, groundedness &amp; hallucination-risk tests, release gates, audit trails</li><li>Docker + Terraform + CI/CD with observability and production SLOs</li></ul></div>
+            </div>
+            <h4 class="mono">REQUEST FLOW</h4>
+            <p class="flow">Responder asks in chat → FastAPI gateway authenticates &amp; authorizes → orchestrator plans → hybrid retrieval + rerank → context assembly with citations → Claude reasons → HITL gate for high-risk actions → answer with citations, trace logged</p>
+            <h4 class="mono">STACK</h4>
+            <div class="pills"><span class="pill">Anthropic Claude</span><span class="pill">Azure OpenAI</span><span class="pill">Azure AI Search</span><span class="pill">Python</span><span class="pill">FastAPI</span><span class="pill">Vector DBs</span><span class="pill">MCP</span><span class="pill">Docker</span><span class="pill">Terraform</span><span class="pill">GitHub Actions</span><span class="pill">Azure DevOps</span></div>
+            <h4 class="mono">OUTCOMES</h4>
+            <ul class="outcomes"><li>+35% knowledge retrieval</li><li>−25% time-to-resolution</li><li>99.9% platform availability</li><li>−60% environment provisioning time</li><li>−30% audit findings</li><li>Team of ~6 engineers led through delivery</li></ul>
+          </div>
+        </div>
+      </article>
+      <article class="glass case reveal">
+        <button class="case-head" aria-expanded="false">
+          <span class="case-top"><span class="case-domain mono">LEGAL SERVICES</span><span class="case-org mono">Chaffin Luhana LLP · 2025</span></span>
+          <span class="case-title">Legal Knowledge &amp; Document Intelligence</span>
+          <span class="case-tease">RAG and agent-based solutions that turned legal document chaos into searchable, summarizable, automatable knowledge.</span>
+          <span class="case-metrics"><span class="cm">+45% efficiency</span><span class="cm">+50% team productivity</span></span>
+          <span class="case-toggle mono">+ expand</span>
+        </button>
+        <div class="case-body">
+          <div class="case-inner">
+            <div class="case-cols">
+              <div><h4 class="mono">PROBLEM</h4><p>Legal teams spent hours searching case files and summarizing documents by hand. Knowledge lived in silos; review cycles were slow and inconsistent.</p></div>
+              <div><h4 class="mono">SOLUTION ARCHITECTURE</h4><ul><li>RAG over legal knowledge bases: document parsing, chunking, embeddings, semantic/hybrid retrieval</li><li>Agent workflows for document summarization, extraction, and workflow automation</li><li>Prompt/context engineering with structured outputs, grounding, and guardrails</li><li>Human-review checkpoints for high-stakes legal content</li><li>Secure Python/FastAPI microservices with observability, automated testing, Docker, CI/CD across AWS, Azure, GCP</li><li>Reusable AI components and data services; architecture standards and quality gates</li></ul></div>
+            </div>
+            <h4 class="mono">REQUEST FLOW</h4>
+            <p class="flow">Matter query → retrieval over case corpus → reranked context → grounded draft (summary / extraction) → guardrail checks → attorney review → finalized output</p>
+            <h4 class="mono">STACK</h4>
+            <div class="pills"><span class="pill">RAG</span><span class="pill">AI Agents</span><span class="pill">Python</span><span class="pill">FastAPI</span><span class="pill">Docker</span><span class="pill">AWS</span><span class="pill">Azure</span><span class="pill">GCP</span><span class="pill">CI/CD</span></div>
+            <h4 class="mono">OUTCOMES</h4>
+            <ul class="outcomes"><li>+45% operational efficiency</li><li>+50% team productivity through reusable AI components</li></ul>
+          </div>
+        </div>
+      </article>
+      <article class="glass case reveal">
+        <button class="case-head" aria-expanded="false">
+          <span class="case-top"><span class="case-domain mono">HIGHER EDUCATION</span><span class="case-org mono">Sacred Heart University · 2024–2025</span></span>
+          <span class="case-title">NLP &amp; Recommendation Systems</span>
+          <span class="case-tease">Production AI applications for a university — from problem framing to monitored deployment, not demos.</span>
+          <span class="case-metrics"><span class="cm">+35% model accuracy</span><span class="cm">Productionized</span></span>
+          <span class="case-toggle mono">+ expand</span>
+        </button>
+        <div class="case-body">
+          <div class="case-inner">
+            <div class="case-cols">
+              <div><h4 class="mono">PROBLEM</h4><p>The university needed AI-powered applications across student and operational data — but models had to be accurate, integrated, and maintainable.</p></div>
+              <div><h4 class="mono">SOLUTION ARCHITECTURE</h4><ul><li>End-to-end delivery: problem framing → data preparation → prompt iteration → model evaluation → backend integration → testing → deployment → monitoring</li><li>NLP and recommendation architectures with feature engineering, model selection/tuning, validation, error analysis</li><li>Python/FastAPI REST services, data pipelines, automation workflows, secure integrations</li><li>Stakeholder demos and UAT; continuous optimization on accuracy, latency, reliability</li></ul></div>
+            </div>
+            <h4 class="mono">REQUEST FLOW</h4>
+            <p class="flow">Stakeholder need → requirements &amp; acceptance criteria → data prep &amp; features → train / tune / validate → API integration → UAT → deploy → monitor &amp; optimize</p>
+            <h4 class="mono">STACK</h4>
+            <div class="pills"><span class="pill">NLP</span><span class="pill">Recommendation Systems</span><span class="pill">Python</span><span class="pill">FastAPI</span><span class="pill">ML Pipelines</span></div>
+            <h4 class="mono">OUTCOMES</h4>
+            <ul class="outcomes"><li>+35% model accuracy</li><li>Productionized with monitoring and continuous optimization</li></ul>
+          </div>
+        </div>
+      </article>
+      <article class="glass case reveal">
+        <button class="case-head" aria-expanded="false">
+          <span class="case-top"><span class="case-domain mono">FINANCIAL SERVICES</span><span class="case-org mono">Manikanta Solutions · 2017–2024</span></span>
+          <span class="case-title">Fraud Detection &amp; Predictive Analytics</span>
+          <span class="case-tease">Fraud detection, forecasting, and predictive maintenance ML — shipped to production with SLAs.</span>
+          <span class="case-metrics"><span class="cm">Production ML</span><span class="cm">SLA-aligned</span></span>
+          <span class="case-toggle mono">+ expand</span>
+        </button>
+        <div class="case-body">
+          <div class="case-inner">
+            <div class="case-cols">
+              <div><h4 class="mono">PROBLEM</h4><p>Clients faced real operational risk: fraudulent transactions, demand uncertainty, and unplanned equipment downtime — each expensive in a different way.</p></div>
+              <div><h4 class="mono">SOLUTION ARCHITECTURE</h4><ul><li>Fraud-detection models using NLP and deep learning on transaction patterns</li><li>Forecasting and predictive maintenance with XGBoost, time-series methods, supervised/unsupervised learning</li><li>Feature engineering, validation, and ongoing model monitoring</li><li>Python/Flask REST APIs with structured error handling, logging, automated testing</li><li>Batch and real-time data pipelines on Python, SQL, NoSQL, AWS, Azure</li><li>Production support with SLA alignment, incident response, and continuous improvement</li></ul></div>
+            </div>
+            <h4 class="mono">REQUEST FLOW</h4>
+            <p class="flow">Source data → feature pipelines → train / validate → API serving → monitoring &amp; drift detection → retrain loop</p>
+            <h4 class="mono">STACK</h4>
+            <div class="pills"><span class="pill">XGBoost</span><span class="pill">Deep Learning</span><span class="pill">NLP</span><span class="pill">Time Series</span><span class="pill">Python</span><span class="pill">Flask</span><span class="pill">AWS</span><span class="pill">Azure</span><span class="pill">SQL</span><span class="pill">NoSQL</span></div>
+            <h4 class="mono">OUTCOMES</h4>
+            <ul class="outcomes"><li>Shipped to production with SLA alignment</li><li>Batch + real-time pipelines</li><li>Continuous monitoring &amp; improvement</li></ul>
+          </div>
+        </div>
+      </article>
+      <article class="glass case reveal">
+        <button class="case-head" aria-expanded="false">
+          <span class="case-top"><span class="case-domain mono">ENTERPRISE INTEGRATION</span><span class="case-org mono">PwC · via Orion Innovation · 2026–Present</span></span>
+          <span class="case-title">Secure Agent Integration Layer</span>
+          <span class="case-tease">One integration layer that lets agents safely act inside the enterprise — authenticated, authorized, audited.</span>
+          <span class="case-metrics"><span class="cm">Reusable connectors</span><span class="cm">Zero-trust tool access</span></span>
+          <span class="case-toggle mono">+ expand</span>
+        </button>
+        <div class="case-body">
+          <div class="case-inner">
+            <div class="case-cols">
+              <div><h4 class="mono">PROBLEM</h4><p>Agents are useless without access to the systems where work happens — but every integration had its own auth, its own contract, and its own audit gaps.</p></div>
+              <div><h4 class="mono">SOLUTION ARCHITECTURE</h4><ul><li>MCP servers and tools exposing enterprise capabilities behind clean API contracts</li><li>Reusable connectors/adapters across insurance core, ITSM, work-management, and knowledge/collaboration systems</li><li>SSO/OAuth2/OIDC identity with RBAC and least-privilege tool access</li><li>REST + event-driven integration patterns; secrets management and audit logging on every tool call</li></ul></div>
+            </div>
+            <h4 class="mono">REQUEST FLOW</h4>
+            <p class="flow">Agent plans → calls MCP tool → gateway authenticates (OAuth2) → RBAC check → connector executes → result + audit log</p>
+            <h4 class="mono">STACK</h4>
+            <div class="pills"><span class="pill">MCP</span><span class="pill">FastAPI</span><span class="pill">REST APIs</span><span class="pill">OAuth2/OIDC</span><span class="pill">Event-Driven</span><span class="pill">Microservices</span></div>
+            <h4 class="mono">OUTCOMES</h4>
+            <ul class="outcomes"><li>Reusable connector catalog across 4 enterprise systems</li><li>Least-privilege access enforced at the gateway</li><li>Every tool action audit-logged</li></ul>
+          </div>
+        </div>
+      </article>
+      <article class="glass case reveal">
+        <button class="case-head" aria-expanded="false">
+          <span class="case-top"><span class="case-domain mono">OPERATIONS · CROSS-INDUSTRY</span><span class="case-org mono">Manikanta Solutions · 2017–2024</span></span>
+          <span class="case-title">Intelligent Automation &amp; Operational Analytics</span>
+          <span class="case-tease">Intelligent automation and operational analytics delivered as consulting engagements — owned end to end.</span>
+          <span class="case-metrics"><span class="cm">Multi-client delivery</span><span class="cm">Production support</span></span>
+          <span class="case-toggle mono">+ expand</span>
+        </button>
+        <div class="case-body">
+          <div class="case-inner">
+            <div class="case-cols">
+              <div><h4 class="mono">PROBLEM</h4><p>Clients needed automation and analytics that survived contact with production: scope creep, data drift, and on-call pain.</p></div>
+              <div><h4 class="mono">SOLUTION ARCHITECTURE</h4><ul><li>Discovery → requirements → solution architecture → engineering → testing → deployment → production support</li><li>Intelligent automation workflows and operational-analytics solutions using NLP and deep learning</li><li>Scalability, resiliency, security, observability, and cost/performance designed in</li><li>Architecture scope, risks, dependencies, timelines, and quality managed across engagements</li></ul></div>
+            </div>
+            <h4 class="mono">REQUEST FLOW</h4>
+            <p class="flow">Discovery → architecture → build → test → deploy → monitor → improve</p>
+            <h4 class="mono">STACK</h4>
+            <div class="pills"><span class="pill">Python</span><span class="pill">Automation Workflows</span><span class="pill">NLP</span><span class="pill">AWS</span><span class="pill">Azure</span><span class="pill">Data Pipelines</span></div>
+            <h4 class="mono">OUTCOMES</h4>
+            <ul class="outcomes"><li>Multiple client engagements delivered</li><li>SLA-aligned production support</li><li>Client communications &amp; stakeholder management</li></ul>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REFERENCE ARCHITECTURES ============ -->
+<section class="section" id="blueprints">
+  <div class="container">
+    <p class="section-kicker mono reveal">// 03 · REFERENCE ARCHITECTURES</p>
+    <h2 class="section-title reveal">Patterns I bring to every engagement</h2>
+    <p class="section-sub reveal">Battle-tested blueprints — not slideware. Each pattern ships with its components and the non-functional requirements it covers, so clients know exactly what "production-ready" means.</p>
+    <div class="bp-grid">
+      <article class="glass bp-card reveal">
+        <p class="mono bp-num">PATTERN 01</p>
+        <h3>Enterprise RAG Platform</h3>
+        <p class="bp-when"><span class="mono">WHEN I USE IT — </span>when answers must come from enterprise truth: policy docs, claims knowledge, legal libraries — with citations and authorization-aware access.</p>
+        <h4 class="mono">COMPONENTS</h4>
+        <ul><li>Ingestion, parsing, semantic chunking, metadata, embeddings</li><li>Vector store + hybrid dense/BM25 search</li><li>Cross-encoder reranking, context assembly, grounded citations</li><li>Authorization-aware retrieval &amp; PII redaction</li></ul>
+        <h4 class="mono">NFR COVERAGE</h4>
+        <div class="pills"><span class="pill nfr">Retrieval eval datasets</span><span class="pill nfr">Groundedness tests</span><span class="pill nfr">PII controls</span><span class="pill nfr">Audit trails</span><span class="pill nfr">Latency budgets</span></div>
+      </article>
+      <article class="glass bp-card reveal">
+        <p class="mono bp-num">PATTERN 02</p>
+        <h3>Agentic Workflow Platform</h3>
+        <p class="bp-when"><span class="mono">WHEN I USE IT — </span>when work spans multiple steps and systems: triage, research, drafting, escalation — with safe action boundaries and human approval gates.</p>
+        <h4 class="mono">COMPONENTS</h4>
+        <ul><li>Planner, router, task decomposition, tool/function calling</li><li>Short &amp; long-term memory, session state</li><li>MCP tool registry with reusable adapters</li><li>Human-in-the-loop escalation &amp; guardrail filters, fallbacks</li></ul>
+        <h4 class="mono">NFR COVERAGE</h4>
+        <div class="pills"><span class="pill nfr">Safe action boundaries</span><span class="pill nfr">Approval gates</span><span class="pill nfr">Trace telemetry</span><span class="pill nfr">Regression gates</span><span class="pill nfr">Cost budgets</span></div>
+      </article>
+      <article class="glass bp-card reveal">
+        <p class="mono bp-num">PATTERN 03</p>
+        <h3>MCP-Based Enterprise Integration</h3>
+        <p class="bp-when"><span class="mono">WHEN I USE IT — </span>when agents need the enterprise: one connector catalog, one identity model — every tool call authenticated, authorized, and audited.</p>
+        <h4 class="mono">COMPONENTS</h4>
+        <ul><li>MCP servers &amp; tools with clean API contracts</li><li>Reusable connectors/adapters (insurance core, ITSM, knowledge)</li><li>REST + event-driven integration patterns</li><li>SSO/OAuth2/OIDC identity, RBAC, least-privilege access</li></ul>
+        <h4 class="mono">NFR COVERAGE</h4>
+        <div class="pills"><span class="pill nfr">Secrets management</span><span class="pill nfr">mTLS</span><span class="pill nfr">Audit logging</span><span class="pill nfr">Rate limiting</span><span class="pill nfr">Contract versioning</span></div>
+      </article>
+      <article class="glass bp-card reveal">
+        <p class="mono bp-num">PATTERN 04</p>
+        <h3>LLMOps / AgentOps Evaluation Harness</h3>
+        <p class="bp-when"><span class="mono">WHEN I USE IT — </span>when AI must be releasable: eval datasets, groundedness and hallucination-risk tests, and regression gates in CI before any model or prompt ships.</p>
+        <h4 class="mono">COMPONENTS</h4>
+        <ul><li>Eval datasets &amp; harnesses: retrieval relevance, groundedness, answer quality</li><li>Hallucination-risk &amp; prompt-injection testing, red-teaming</li><li>Prompt/model/version management, tracing, feedback loops</li><li>Latency/token/cost regression tests in CI, SLOs, incident response</li></ul>
+        <h4 class="mono">NFR COVERAGE</h4>
+        <div class="pills"><span class="pill nfr">Acceptance criteria</span><span class="pill nfr">Release gates</span><span class="pill nfr">SLOs</span><span class="pill nfr">Content safety</span><span class="pill nfr">Model risk mgmt</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="industries-band">
+  <div class="container">
+    <p class="mono ind-kicker reveal">DOMAINS DELIVERED IN</p>
+    <div class="ind-chips reveal">
+      <span class="ind-chip">Insurance Operations</span><span class="ind-chip">Legal Services</span><span class="ind-chip">Higher Education</span><span class="ind-chip">Financial Services</span><span class="ind-chip">Manufacturing &amp; Operations</span><span class="ind-chip dim">+ horizontals: Enterprise Platforms · Systems Integration · AI Governance</span>
+    </div>
+  </div>
+</div>
+
 <!-- ============ EXPERIENCE ============ -->
 <section class="section" id="experience">
   <div class="container">
-    <p class="section-kicker mono reveal">// 02 · EXPERIENCE</p>
+    <p class="section-kicker mono reveal">// 04 · EXPERIENCE</p>
     <h2 class="section-title reveal">Where I've shipped</h2>
     <div class="timeline">
 
@@ -237,10 +449,42 @@
   </div>
 </section>
 
+<!-- ============ FOR CLIENTS ============ -->
+<section class="section" id="clients">
+  <div class="container">
+    <p class="section-kicker mono reveal">// 05 · FOR CLIENTS</p>
+    <h2 class="section-title reveal">How I partner with clients</h2>
+    <p class="section-sub reveal">Consulting is a trust business. My engagement model is built to de-risk AI adoption: honest discovery, documented decisions, incremental delivery, and measured value.</p>
+    <div class="steps">
+      <article class="glass step reveal"><span class="step-num grad">01</span><h3>Discovery &amp; Current-State Assessment</h3><p>I start where the business is: stakeholder interviews, capability mapping, data and system inventory, risk and AI-readiness assessment. You get an honest map of what's possible — and what isn't yet.</p></article>
+      <article class="glass step reveal"><span class="step-num grad">02</span><h3>Target-State Architecture &amp; ADRs</h3><p>Reference architecture, HLD/LLD, architecture decision records, NFRs, and a model/context strategy — including build-vs-buy and cost/latency trade-offs, documented so decisions survive personnel changes.</p></article>
+      <article class="glass step reveal"><span class="step-num grad">03</span><h3>Incremental Delivery with Eval Gates</h3><p>Thin vertical slices to production, each gated by eval datasets and acceptance criteria. Regular demos and UAT keep stakeholders in the loop; feedback flows straight into the next slice.</p></article>
+      <article class="glass step reveal"><span class="step-num grad">04</span><h3>Production Readiness &amp; Value Realization</h3><p>Security and governance reviews, SLOs, observability, and runbooks before go-live. Then we measure: retrieval quality, resolution time, cost per task — outcomes, not vibes.</p></article>
+    </div>
+    <p class="client-note glass reveal">I communicate at every altitude — whiteboard with engineers in the morning, roadmap with executives in the afternoon — and I run architecture governance that keeps delivery fast <em>without</em> breaking trust.</p>
+  </div>
+</section>
+
+<!-- ============ PRINCIPLES ============ -->
+<section class="section" id="principles">
+  <div class="container">
+    <p class="section-kicker mono reveal">// 06 · ARCHITECTURE PRINCIPLES</p>
+    <h2 class="section-title reveal">What I won't compromise on</h2>
+    <div class="principles-grid">
+      <article class="glass principle reveal"><span class="p-icon">◎</span><h3>Groundedness over fluency</h3><p>A fluent lie is worse than no answer. Every response cites its sources; retrieval quality <em>is</em> the product.</p></article>
+      <article class="glass principle reveal"><span class="p-icon">◈</span><h3>Eval before scale</h3><p>Nothing scales until it's measured: eval datasets, acceptance criteria, and regression gates precede every rollout.</p></article>
+      <article class="glass principle reveal"><span class="p-icon">⛨</span><h3>Secure by design</h3><p>Identity, RBAC, PII controls, and audit trails are architecture decisions — not security-team tickets filed later.</p></article>
+      <article class="glass principle reveal"><span class="p-icon">◷</span><h3>Cost &amp; latency are NFRs</h3><p>Token and latency budgets are set up front and enforced in CI — not discovered in the invoice.</p></article>
+      <article class="glass principle reveal"><span class="p-icon">◐</span><h3>Human-in-the-loop where it matters</h3><p>Automate the routine; escalate the consequential. Approval gates scale trust.</p></article>
+      <article class="glass principle reveal"><span class="p-icon">⇄</span><h3>Reuse via connectors &amp; adapters</h3><p>Build once as an MCP tool or adapter; compose everywhere. Platforms beat point solutions.</p></article>
+    </div>
+  </div>
+</section>
+
 <!-- ============ SKILLS ============ -->
 <section class="section" id="skills">
   <div class="container">
-    <p class="section-kicker mono reveal">// 03 · CAPABILITIES</p>
+    <p class="section-kicker mono reveal">// 07 · CAPABILITIES</p>
     <h2 class="section-title reveal">Skills, architected</h2>
     <div class="tabs reveal" id="skillTabs" role="tablist"></div>
     <div class="glass skills-panel reveal" id="skillsPanel"></div>
@@ -250,7 +494,7 @@
 <!-- ============ IMPACT ============ -->
 <section class="section impact" id="impact">
   <div class="container">
-    <p class="section-kicker mono reveal">// 04 · IMPACT</p>
+    <p class="section-kicker mono reveal">// 08 · IMPACT</p>
     <h2 class="section-title reveal">Measured outcomes</h2>
     <div class="metrics-grid">
       <div class="metric glass reveal"><span class="metric-num grad" data-count="35" data-suffix="%">0</span><span class="metric-label">better knowledge retrieval</span></div>
@@ -274,7 +518,7 @@
 <!-- ============ EDUCATION ============ -->
 <section class="section" id="education">
   <div class="container">
-    <p class="section-kicker mono reveal">// 05 · EDUCATION &amp; STATUS</p>
+    <p class="section-kicker mono reveal">// 09 · EDUCATION &amp; STATUS</p>
     <h2 class="section-title reveal">Foundations</h2>
     <div class="edu-grid">
       <div class="glass edu-card reveal">
@@ -299,7 +543,7 @@
 <!-- ============ CONTACT ============ -->
 <section class="section" id="contact">
   <div class="container">
-    <p class="section-kicker mono reveal">// 06 · CONTACT</p>
+    <p class="section-kicker mono reveal">// 10 · CONTACT</p>
     <h2 class="section-title reveal">Let's build something <span class="grad">intelligent</span></h2>
     <div class="contact-grid">
       <div class="contact-info reveal">
@@ -319,6 +563,10 @@
           <span class="c-icon">📍</span>
           <span><span class="mono c-label">BASED IN</span><span class="c-val">North Haven, CT — open to remote</span></span>
         </div>
+        <a class="glass contact-row" href="mailto:vaishnavikrishnakantt@gmail.com?subject=R%C3%A9sum%C3%A9%20request%20for%20Vaishnavi%20Patel&body=Hi%20Vaishnavi%2C%0A%0APlease%20share%20your%20r%C3%A9sum%C3%A9.%0A%0AThanks!">
+          <span class="c-icon">▤</span>
+          <span><span class="mono c-label">R&Eacute;SUM&Eacute;</span><span class="c-val">Request r&eacute;sum&eacute; &#8594;</span></span>
+        </a>
       </div>
       <form class="glass contact-form reveal" id="contactForm">
         <label class="mono">Your name<input type="text" id="cfName" required placeholder="Ada Lovelace"></label>
@@ -332,9 +580,25 @@
 </section>
 
 <footer class="footer mono">
-  <div class="container">
-    <span>© 2026 Vaishnavi Patel · Built with intent, shipped with telemetry</span>
-    <a href="#top">back to top ↑</a>
+  <div class="container foot-grid">
+    <div>
+      <p class="foot-head">SECTIONS</p>
+      <a href="#blueprint">Solution Blueprint</a><a href="#work">Selected Work</a><a href="#blueprints">Reference Architectures</a><a href="#experience">Experience</a><a href="#clients">For Clients</a><a href="#contact">Contact</a>
+    </div>
+    <div>
+      <p class="foot-head">CONNECT</p>
+      <a href="mailto:vaishnavikrishnakantt@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/vaishnavi-patel-a7785b325" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://ttripathi167.github.io/">ttripathi167.github.io</a>
+    </div>
+    <div>
+      <p class="foot-head">PROFILE</p>
+      <p class="foot-note">Generative AI &amp; Agentic AI Solution Architect · North Haven, CT · U.S. Permanent Resident</p>
+    </div>
+  </div>
+  <div class="container foot-base">
+    <span>&copy; 2026 Vaishnavi Patel · Built with intent, shipped with telemetry</span>
+    <a href="#top">back to top &uarr;</a>
   </div>
 </footer>
 

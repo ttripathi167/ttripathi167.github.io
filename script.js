@@ -175,3 +175,19 @@ document.getElementById('contactForm').addEventListener('submit', function(e){
   location.href = 'mailto:vaishnavikrishnakantt@gmail.com?subject=' + subject + '&body=' + body;
 });
 })();
+
+/* ---------- Case study accordion ---------- */
+(function(){
+"use strict";
+document.querySelectorAll('.case').forEach(function(card){
+  var head = card.querySelector('.case-head');
+  var body = card.querySelector('.case-body');
+  var toggle = card.querySelector('.case-toggle');
+  head.addEventListener('click', function(){
+    var open = card.classList.toggle('open');
+    head.setAttribute('aria-expanded', open ? 'true' : 'false');
+    body.style.maxHeight = open ? (body.scrollHeight + 'px') : '0px';
+    toggle.textContent = open ? '\u2212 collapse' : '+ expand';
+  });
+});
+})();
