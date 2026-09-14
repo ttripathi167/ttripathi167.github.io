@@ -27,9 +27,9 @@
   <div class="nav-inner">
     <a href="#top" class="nav-logo mono">&lt;vaishnavi<span class="grad">.patel</span>/&gt;</a>
     <div class="nav-links" id="navLinks">
-      <a href="#gallery">Architecture</a>
-      <a href="#work">Case Studies</a>
-      <a href="#governance">Governance</a>
+      <a href="#lab">Lab</a>
+      <a href="#sim">Simulators</a>
+      <a href="#adr">Decisions</a>
       <a href="#experience">Experience</a>
       <a href="#contact" class="nav-cta">Hire Me</a>
     </div>
@@ -51,7 +51,7 @@
       <span>RAG</span><span>Agentic AI</span><span>MCP</span><span>AI Platforms</span><span>LLMOps</span><span>Responsible AI</span><span>Enterprise Architecture</span>
     </div>
     <div class="hero-ctas reveal">
-      <a href="#gallery" class="btn btn-primary">View Architecture →</a>
+      <a href="#lab" class="btn btn-primary">Enter the Architecture Lab →</a>
       <a href="#work" class="btn btn-ghost">Explore Case Studies →</a>
     </div>
     <p class="hero-loc mono reveal">📍 North Haven, CT · U.S. Permanent Resident · No sponsorship needed</p>
@@ -90,10 +90,191 @@
   </div>
 </div>
 
+<!-- ============ EXPERIENCE ============ -->
+<section class="section" id="experience">
+  <div class="container">
+    <p class="section-kicker mono reveal">// 01 · EXPERIENCE</p>
+    <h2 class="section-title reveal">Where I've shipped</h2>
+    <p class="section-sub reveal">The fast path: full timeline below — then the deep technical sections: the Architecture Lab, simulators, and decision records.</p>
+    <div class="timeline">
+
+      <article class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card glass">
+          <p class="mono tl-date">Jan 2026 — Present</p>
+          <h3>Generative AI Solution Architect</h3>
+          <p class="tl-org">PwC <span class="mono tl-via">via Orion Innovation</span></p>
+          <ul>
+            <li>Architected an <strong>enterprise GenAI incident-intelligence platform</strong>: <strong>+35% knowledge retrieval</strong>, <strong>−25% time-to-resolution</strong>.</li>
+            <li>Designed <strong>RAG + agentic workflows</strong> across ~12 knowledge sources and 4 enterprise systems.</li>
+            <li>Built secure <strong>Python/FastAPI microservices</strong> with SSO/OAuth2 and RBAC.</li>
+            <li>Shipped <strong>Claude-based components</strong> with AgentOps telemetry — eval datasets, groundedness, hallucination-risk testing.</li>
+            <li>Docker, Terraform, CI/CD: <strong>−60% provisioning time</strong>, <strong>−30% audit findings</strong>, <strong>99.9% availability</strong>.</li>
+            <li>Lead a team of <strong>~6 engineers</strong>.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card glass">
+          <p class="mono tl-date">Apr 2025 — Nov 2025</p>
+          <h3>Generative AI Solution Architect</h3>
+          <p class="tl-org">Chaffin Luhana LLP</p>
+          <ul>
+            <li>Designed <strong>legal RAG &amp; agent solutions</strong> for case-work knowledge and document intelligence.</li>
+            <li>Drove <strong>+45% operational efficiency</strong> and <strong>+50% team productivity</strong> through reusable AI components.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card glass">
+          <p class="mono tl-date">Aug 2024 — Mar 2025</p>
+          <h3>AI/ML Solution Architect</h3>
+          <p class="tl-org">Sacred Heart University</p>
+          <ul>
+            <li>Architected <strong>NLP &amp; recommendation systems</strong> for university data platforms.</li>
+            <li>Achieved <strong>+35% model accuracy</strong> through improved feature pipelines and evaluation.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card glass">
+          <p class="mono tl-date">Dec 2017 — Jan 2024 <span class="mono tl-sub">· intern 2015–2017</span></p>
+          <h3>AI Solution Architect</h3>
+          <p class="tl-org">Manikanta Solutions</p>
+          <ul>
+            <li>Shipped <strong>fraud detection, forecasting, and predictive maintenance</strong> ML systems.</li>
+            <li>Built <strong>Python/Flask APIs</strong> and data pipelines on <strong>AWS/Azure</strong> for production workloads.</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ ARCHITECTURE LAB ============ -->
+<section class="section" id="lab">
+  <div class="container">
+    <p class="section-kicker mono reveal">// 02 · ARCHITECTURE LAB</p>
+    <h2 class="section-title reveal">The Architecture Lab</h2>
+    <p class="section-sub reveal">Live systems, not slides. Pick a blueprint, press play, and watch a request travel through it — then click any component for its design brief: what it does, why it's there, and what it costs to change.</p>
+    <div class="lab-tabs reveal" role="tablist" aria-label="Architecture blueprints" id="labTabs"></div>
+    <div class="glass lab-stage reveal">
+      <div class="lab-viewport" id="labViewport">
+        <svg id="labSvg" class="dsvg lab-svg" role="img" aria-label="Interactive architecture diagram"></svg>
+      </div>
+      <div class="lab-controls">
+        <button class="btn btn-primary lab-play" id="labPlay">▶ Play request lifecycle</button>
+        <button class="btn btn-ghost lab-reset" id="labReset">Reset</button>
+        <p class="mono lab-hint">click any component for the design brief · press <kbd>`</kbd> for the architect console</p>
+      </div>
+      <div class="lab-narration" id="labNarration" aria-live="polite">
+        <span class="mono lab-step" id="labStep">READY</span>
+        <p id="labNarr">Choose a blueprint above and press play — or click any component to inspect it.</p>
+      </div>
+    </div>
+    <aside class="lab-panel" id="labPanel" aria-hidden="true" role="dialog" aria-modal="false" aria-label="Component design brief">
+      <button class="lab-panel-close" id="labPanelClose" aria-label="Close panel">×</button>
+      <p class="mono lab-panel-kicker" id="labPanelKicker"></p>
+      <h3 id="labPanelTitle"></h3>
+      <p class="lab-panel-sub" id="labPanelSub"></p>
+      <h4 class="mono">WHAT IT DOES</h4><p id="labPanelWhat"></p>
+      <h4 class="mono">DESIGN DECISIONS</h4><ul id="labPanelDecisions"></ul>
+      <h4 class="mono">TRADEOFFS &amp; ALTERNATIVES</h4><ul id="labPanelTradeoffs"></ul>
+      <h4 class="mono">POWERED BY</h4><div class="pills" id="labPanelStack"></div>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ SELECTED IMPACT ============ -->
+<section class="section impact" id="impact">
+  <div class="container">
+    <p class="section-kicker mono reveal">// 03 · MEASURED OUTCOMES</p>
+    <h2 class="section-title reveal">Metrics dashboard</h2>
+    <p class="section-sub reveal">Outcomes from production systems — not demo metrics. Each one measured before and after the system shipped.</p>
+        <div class="metrics-grid dash">
+      <div class="metric glass reveal">
+        <span class="metric-num grad" data-count="35" data-prefix="+" data-suffix="%">+35%</span>
+        <span class="metric-label">knowledge retrieval quality</span>
+        <div class="dash-bar"><i style="--w:78%"></i></div>
+        <span class="dash-note mono">hybrid retrieval + rerank · eval-gated</span>
+      </div>
+      <div class="metric glass reveal">
+        <span class="metric-num grad" data-count="25" data-prefix="−" data-suffix="%">−25%</span>
+        <span class="metric-label">incident resolution time</span>
+        <div class="dash-bar"><i style="--w:64%"></i></div>
+        <span class="dash-note mono">cited answers · agentic triage</span>
+      </div>
+      <div class="metric glass reveal">
+        <span class="metric-num grad" data-count="99.9" data-decimals="1" data-suffix="%">99.9%</span>
+        <span class="metric-label">platform availability</span>
+        <div class="dash-bar"><i style="--w:99%"></i></div>
+        <span class="dash-note mono">SLO-backed · IaC · observed</span>
+      </div>
+      <div class="metric glass reveal">
+        <span class="metric-num grad" data-count="30" data-prefix="−" data-suffix="%">−30%</span>
+        <span class="metric-label">audit findings</span>
+        <div class="dash-bar"><i style="--w:70%"></i></div>
+        <span class="dash-note mono">guardrails · HITL · audit trails</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SIMULATORS ============ -->
+<section class="section" id="sim">
+  <div class="container">
+    <p class="section-kicker mono reveal">// 05 · SIMULATORS</p>
+    <h2 class="section-title reveal">Simulators</h2>
+    <p class="section-sub reveal">Hands-on intuition for the two loops I design most. These are <strong>illustrative simulations</strong> — no real retrieval, tools, or models run in your browser; latencies and outputs are synthesized to show how the machinery behaves.</p>
+    <div class="sim-grid">
+      <article class="glass sim-card reveal">
+        <p class="mono sim-kicker">ILLUSTRATIVE · RAG PIPELINE</p>
+        <h3>RAG simulator</h3>
+        <p class="sim-desc">Type a question. Watch it embed, retrieve, rerank, and generate — with per-stage latency.</p>
+        <div class="sim-input-row">
+          <input id="ragQuery" type="text" maxlength="140" placeholder="e.g. What is our incident escalation policy?" aria-label="Your question">
+          <button class="btn btn-primary" id="ragRun">Run</button>
+        </div>
+        <ol class="sim-stages" id="ragStages" aria-live="polite"></ol>
+        <div class="sim-answer" id="ragAnswer" aria-live="polite"></div>
+      </article>
+      <article class="glass sim-card reveal">
+        <p class="mono sim-kicker">ILLUSTRATIVE · AGENT LOOP</p>
+        <h3>Agent-loop visualizer</h3>
+        <p class="sim-desc">Planner → tools → critic, iterating until the critic is satisfied or a stop condition fires.</p>
+        <div class="sim-input-row">
+          <button class="btn btn-primary" id="agentRun">Run agent loop</button>
+          <span class="mono sim-status" id="agentStatus">idle</span>
+        </div>
+        <ol class="sim-stages" id="agentStages" aria-live="polite"></ol>
+        <div class="sim-answer" id="agentVerdict"></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DECISION RECORDS ============ -->
+<section class="section" id="adr">
+  <div class="container">
+    <p class="section-kicker mono reveal">// 06 · DECISION RECORDS</p>
+    <h2 class="section-title reveal">Architecture decision records</h2>
+    <p class="section-sub reveal">The decisions that survive personnel changes are the ones written down. A selection of the ADRs behind my production systems — filter by concern, expand for context, alternatives, and the verdict.</p>
+    <div class="adr-filters reveal" id="adrFilters" role="group" aria-label="Filter decision records"></div>
+    <div class="adr-grid" id="adrGrid"></div>
+  </div>
+</section>
+
 <!-- ============ ARCHITECTURE AT A GLANCE ============ -->
 <section class="section" id="glance">
   <div class="container">
-    <p class="section-kicker mono reveal">// 01 · ARCHITECTURE AT A GLANCE</p>
+    <p class="section-kicker mono reveal">// 04 · ARCHITECTURE AT A GLANCE</p>
     <h2 class="section-title reveal">What I architect</h2>
     <p class="section-sub reveal">Five domains, one goal: enterprise AI systems that survive production. Hover or tap a card.</p>
     <div class="glance-grid">
@@ -141,27 +322,10 @@
   </div>
 </section>
 
-<!-- ============ SELECTED IMPACT ============ -->
-<section class="section impact" id="impact">
-  <div class="container">
-    <p class="section-kicker mono reveal">// 02 · SELECTED IMPACT</p>
-    <h2 class="section-title reveal">Measured outcomes</h2>
-    <p class="section-sub reveal">Outcomes from production systems — not demo metrics.</p>
-    <div class="metrics-grid">
-      <div class="metric glass reveal"><span class="metric-num grad" data-count="35" data-prefix="+" data-suffix="%">+35%</span><span class="metric-label">knowledge retrieval</span></div>
-      <div class="metric glass reveal"><span class="metric-num grad" data-count="25" data-prefix="−" data-suffix="%">−25%</span><span class="metric-label">incident resolution time</span></div>
-      <div class="metric glass reveal"><span class="metric-num grad" data-count="99.9" data-decimals="1" data-suffix="%">99.9%</span><span class="metric-label">platform availability</span></div>
-      <div class="metric glass reveal"><span class="metric-num grad" data-count="60" data-prefix="−" data-suffix="%">−60%</span><span class="metric-label">environment provisioning time</span></div>
-      <div class="metric glass reveal"><span class="metric-num grad" data-count="30" data-prefix="−" data-suffix="%">−30%</span><span class="metric-label">audit findings</span></div>
-      <div class="metric glass reveal"><span class="metric-num grad" data-count="6" data-prefix="" data-suffix="">6</span><span class="metric-label">engineers led</span></div>
-    </div>
-  </div>
-</section>
-
 <!-- ============ FLAGSHIP CASE STUDIES ============ -->
 <section class="section" id="work">
   <div class="container">
-    <p class="section-kicker mono reveal">// 03 · FLAGSHIP CASE STUDIES</p>
+    <p class="section-kicker mono reveal">// 07 · FLAGSHIP CASE STUDIES</p>
     <h2 class="section-title reveal">Three systems, end to end</h2>
     <p class="section-sub reveal">Depth over breadth: problem → architecture → decisions → tradeoffs → outcomes. Click a card for the full study — or hover any diagram component for detail.</p>
 
@@ -367,7 +531,7 @@
 <!-- ============ REFERENCE ARCHITECTURE GALLERY ============ -->
 <section class="section" id="gallery">
   <div class="container">
-    <p class="section-kicker mono reveal">// 04 · REFERENCE ARCHITECTURE GALLERY</p>
+    <p class="section-kicker mono reveal">// 08 · BLUEPRINT GALLERY</p>
     <h2 class="section-title reveal">Blueprints, not slideware</h2>
     <p class="section-sub reveal">The patterns I bring to every engagement — drawn as systems, with the non-functional requirements each one covers. <strong>Hover any component</strong> for the design note; <strong>click a component</strong> to open the case study behind it.</p>
 
@@ -518,7 +682,7 @@
 <!-- ============ AI GOVERNANCE ============ -->
 <section class="section" id="governance">
   <div class="container">
-    <p class="section-kicker mono reveal">// 05 · AI GOVERNANCE</p>
+    <p class="section-kicker mono reveal">// 09 · AI GOVERNANCE</p>
     <h2 class="section-title reveal">Responsible &amp; governed AI</h2>
     <p class="section-sub reveal">Enterprise agentic AI is an architecture and governance problem — not just an application problem. This is the framework I design into every system.</p>
     <div class="gov-grid">
@@ -554,7 +718,7 @@
 <!-- ============ AGENTIC AI DESIGN FRAMEWORK ============ -->
 <section class="section" id="agents">
   <div class="container">
-    <p class="section-kicker mono reveal">// 06 · AGENTIC AI DESIGN FRAMEWORK</p>
+    <p class="section-kicker mono reveal">// 10 · AGENTIC AI DESIGN FRAMEWORK</p>
     <h2 class="section-title reveal">How I design agents that survive production</h2>
     <p class="section-sub reveal">Six stages, each with explicit boundaries. Hover or tap a stage.</p>
     <div class="stepper">
@@ -595,7 +759,7 @@
 <!-- ============ HOW I LEAD AI ARCHITECTURE ============ -->
 <section class="section" id="leadership">
   <div class="container">
-    <p class="section-kicker mono reveal">// 07 · LEADERSHIP</p>
+    <p class="section-kicker mono reveal">// 11 · LEADERSHIP</p>
     <h2 class="section-title reveal">How I lead AI architecture</h2>
     <p class="section-sub reveal">From first whiteboard to production value — the operating model I run on every engagement.</p>
     <div class="lead-steps">
@@ -610,77 +774,10 @@
   </div>
 </section>
 
-<!-- ============ EXPERIENCE ============ -->
-<section class="section" id="experience">
-  <div class="container">
-    <p class="section-kicker mono reveal">// 08 · EXPERIENCE</p>
-    <h2 class="section-title reveal">Where I've shipped</h2>
-    <div class="timeline">
-
-      <article class="tl-item reveal">
-        <div class="tl-dot"></div>
-        <div class="tl-card glass">
-          <p class="mono tl-date">Jan 2026 — Present</p>
-          <h3>Generative AI Solution Architect</h3>
-          <p class="tl-org">PwC <span class="mono tl-via">via Orion Innovation</span></p>
-          <ul>
-            <li>Architected an <strong>enterprise GenAI incident-intelligence platform</strong>: <strong>+35% knowledge retrieval</strong>, <strong>−25% time-to-resolution</strong>.</li>
-            <li>Designed <strong>RAG + agentic workflows</strong> across ~12 knowledge sources and 4 enterprise systems.</li>
-            <li>Built secure <strong>Python/FastAPI microservices</strong> with SSO/OAuth2 and RBAC.</li>
-            <li>Shipped <strong>Claude-based components</strong> with AgentOps telemetry — eval datasets, groundedness, hallucination-risk testing.</li>
-            <li>Docker, Terraform, CI/CD: <strong>−60% provisioning time</strong>, <strong>−30% audit findings</strong>, <strong>99.9% availability</strong>.</li>
-            <li>Lead a team of <strong>~6 engineers</strong>.</li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="tl-item reveal">
-        <div class="tl-dot"></div>
-        <div class="tl-card glass">
-          <p class="mono tl-date">Apr 2025 — Nov 2025</p>
-          <h3>Generative AI Solution Architect</h3>
-          <p class="tl-org">Chaffin Luhana LLP</p>
-          <ul>
-            <li>Designed <strong>legal RAG &amp; agent solutions</strong> for case-work knowledge and document intelligence.</li>
-            <li>Drove <strong>+45% operational efficiency</strong> and <strong>+50% team productivity</strong> through reusable AI components.</li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="tl-item reveal">
-        <div class="tl-dot"></div>
-        <div class="tl-card glass">
-          <p class="mono tl-date">Aug 2024 — Mar 2025</p>
-          <h3>AI/ML Solution Architect</h3>
-          <p class="tl-org">Sacred Heart University</p>
-          <ul>
-            <li>Architected <strong>NLP &amp; recommendation systems</strong> for university data platforms.</li>
-            <li>Achieved <strong>+35% model accuracy</strong> through improved feature pipelines and evaluation.</li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="tl-item reveal">
-        <div class="tl-dot"></div>
-        <div class="tl-card glass">
-          <p class="mono tl-date">Dec 2017 — Jan 2024 <span class="mono tl-sub">· intern 2015–2017</span></p>
-          <h3>AI Solution Architect</h3>
-          <p class="tl-org">Manikanta Solutions</p>
-          <ul>
-            <li>Shipped <strong>fraud detection, forecasting, and predictive maintenance</strong> ML systems.</li>
-            <li>Built <strong>Python/Flask APIs</strong> and data pipelines on <strong>AWS/Azure</strong> for production workloads.</li>
-          </ul>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
-
 <!-- ============ CAPABILITIES ============ -->
 <section class="section" id="skills">
   <div class="container">
-    <p class="section-kicker mono reveal">// 09 · CAPABILITIES</p>
+    <p class="section-kicker mono reveal">// 12 · CAPABILITIES</p>
     <h2 class="section-title reveal">Capability matrix</h2>
     <p class="section-sub reveal">How the pieces fit together — architecture first, technology in service of it.</p>
     <div class="cap-wrap glass reveal">
@@ -701,7 +798,7 @@
 <!-- ============ EDUCATION ============ -->
 <section class="section" id="education">
   <div class="container">
-    <p class="section-kicker mono reveal">// 10 · EDUCATION &amp; STATUS</p>
+    <p class="section-kicker mono reveal">// 13 · EDUCATION &amp; STATUS</p>
     <h2 class="section-title reveal">Foundations</h2>
     <div class="edu-grid">
       <div class="glass edu-card reveal">
@@ -726,7 +823,7 @@
 <!-- ============ ASK THE ARCHITECT ============ -->
 <section class="section" id="ask">
   <div class="container">
-    <p class="section-kicker mono reveal">// 11 · ASK THE ARCHITECT</p>
+    <p class="section-kicker mono reveal">// 14 · ASK THE ARCHITECT</p>
     <h2 class="section-title reveal">Architectural reasoning, on record</h2>
     <p class="section-sub reveal">The questions I get in interviews — answered the way I'd whiteboard them.</p>
     <div class="cases">
@@ -782,7 +879,7 @@
 <!-- ============ CONTACT ============ -->
 <section class="section" id="contact">
   <div class="container">
-    <p class="section-kicker mono reveal">// 12 · CONTACT</p>
+    <p class="section-kicker mono reveal">// 15 · CONTACT</p>
     <h2 class="section-title reveal">Let's build something <span class="grad">intelligent</span></h2>
     <div class="contact-grid">
       <div class="contact-info reveal">
@@ -818,11 +915,27 @@
   </div>
 </section>
 
+<!-- ============ ARCHITECT CONSOLE (easter egg) ============ -->
+<div class="term-overlay" id="termOverlay" aria-hidden="true">
+  <div class="term-window glass" role="dialog" aria-label="Architect console">
+    <div class="term-head">
+      <div class="traffic"><i></i><i></i><i></i></div>
+      <span class="term-title mono">vaishnavi@architect:~ — type `help`</span>
+      <button class="copy-btn" id="termClose">close ×</button>
+    </div>
+    <div class="term-body" id="termOut" aria-live="polite"></div>
+    <div class="term-input-row">
+      <span class="mono term-prompt">vaishnavi@architect:~$</span>
+      <input id="termIn" class="mono" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Terminal input">
+    </div>
+  </div>
+</div>
+
 <footer class="footer mono">
   <div class="container foot-grid">
     <div>
       <p class="foot-head">SECTIONS</p>
-      <a href="#glance">At a Glance</a><a href="#work">Case Studies</a><a href="#gallery">Architecture Gallery</a><a href="#governance">Governance</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+      <a href="#lab">Architecture Lab</a><a href="#glance">At a Glance</a><a href="#sim">Simulators</a><a href="#adr">Decisions</a><a href="#work">Case Studies</a><a href="#gallery">Architecture Gallery</a><a href="#governance">Governance</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
     </div>
     <div>
       <p class="foot-head">CONNECT</p>
@@ -837,10 +950,15 @@
   </div>
   <div class="container foot-base">
     <span>&copy; 2026 Vaishnavi Patel · Built with intent, shipped with telemetry</span>
+    <span class="foot-console">press <kbd>`</kbd> for the architect console</span>
     <a href="#top">back to top &uarr;</a>
   </div>
 </footer>
 
 <script src="script.js"></script>
+<script src="lab.js"></script>
+<script src="sim.js"></script>
+<script src="adr.js"></script>
+<script src="console.js"></script>
 </body>
 </html>
