@@ -325,7 +325,6 @@ body::after{
 /* ============ HERO V2 ============ */
 .hero-role{font-size:.85rem;letter-spacing:5px;color:var(--cyan);margin-top:16px;font-weight:700}
 .hero-value{font-family:var(--font-d);font-size:clamp(1.35rem,3.2vw,2.05rem);font-weight:500;line-height:1.45;margin-top:22px;color:var(--text);max-width:860px;margin-left:auto;margin-right:auto}
-.hero-domains{font-size:.85rem;letter-spacing:2.5px;color:var(--muted);margin-top:20px}
 .hero-chips{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:22px}
 .hero-chips span{font-family:var(--font-m);font-size:.74rem;letter-spacing:1px;padding:8px 16px;border-radius:999px;border:1px solid rgba(139,92,246,.45);background:rgba(139,92,246,.08);color:#dcd6f7;transition:.25s}
 .hero-chips span:hover{border-color:var(--cyan);color:#fff;box-shadow:0 0 16px rgba(34,211,238,.3);transform:translateY(-2px)}
@@ -390,13 +389,7 @@ body::after{
 .trade-table tr:hover td{background:rgba(139,92,246,.05)}
 
 /* ============ ADDITIONAL EXPERIENCE ============ */
-.add-exp-head{font-family:var(--font-d);font-size:1.3rem;margin:44px 0 18px}
-.add-exp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.add-exp{padding:26px 24px;transition:transform .25s}
-.add-exp:hover{transform:translateY(-4px)}
-.add-exp h4{font-family:var(--font-d);font-size:1.08rem;margin:10px 0 4px}
 .add-org{font-size:.7rem;letter-spacing:1px;color:var(--muted);margin-bottom:10px}
-.add-exp p{color:var(--muted);font-size:.88rem;margin-bottom:14px}
 
 /* ============ GOVERNANCE ============ */
 .gov-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
@@ -435,7 +428,7 @@ body::after{
   .path-grid{grid-template-columns:1fr}
   .lead-steps{grid-template-columns:repeat(2,1fr)}
   .decisions{grid-template-columns:1fr}
-  .add-exp-grid{grid-template-columns:1fr}
+
   .diagram-foot{padding:16px 20px 22px}
   .diagram-head{padding:24px 20px 4px}
 }
